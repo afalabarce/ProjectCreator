@@ -75,8 +75,10 @@ He publicado en [YouTube](https://www.youtube.com/watch?v=WEes5SARr0s) un video 
 utilización de la aplicación.
 
 Como particularidad, la primera vez que se inicia, la aplicación crea en el directorio raíz del usuario una
-carpeta llamada "", la cual, a su vez contiene una carpeta llamada "templates", dentro de la cual copiaremos
+carpeta llamada "TaRSyS Mobile Project Creator", la cual, a su vez contiene una carpeta llamada "templates", dentro de la cual copiaremos
 las carpetas con proyectos Android y/o iOS que deseemos utilizar como plantilla base.
+
+![img_1.png](img_1.png)
 
 ## Conclusión
 
