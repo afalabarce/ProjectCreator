@@ -272,7 +272,7 @@ fun FileChooserDialog(
                     ) {
                         items(
                             if (currentPath.name.contains("File.listRoots")) File.listRoots() else currentPath.listFiles()
-                                ?.filter { x -> (onlyDirectories && x.isDirectory) || !onlyDirectories }?.toTypedArray()
+                                ?.filter { x -> ((onlyDirectories && x.isDirectory) || !onlyDirectories) && !x.name.startsWith(".") }?.toTypedArray()
                                 ?: arrayOf()
                         ) { file ->
                             FileItem(file, file == uiState.selectedFileOrDirectory) {
