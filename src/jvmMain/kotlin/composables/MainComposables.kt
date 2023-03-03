@@ -173,7 +173,7 @@ private fun MainTemplateEditor(
 
 
         when (currentTemplate?.projectType ?: ProjectType.None){
-            ProjectType.Android -> AndroidTemplateEditor(currentTemplate!!, readOnly, onRequestFolderSelector, onFieldModify)
+            ProjectType.Android, ProjectType.AndroidKts -> AndroidTemplateEditor(currentTemplate!!, readOnly, onRequestFolderSelector, onFieldModify)
             ProjectType.IOS -> IosTemplateEditor(currentTemplate!!, readOnly, onRequestFolderSelector, onFieldModify)
             ProjectType.Flutter -> FlutterTemplateEditor(currentTemplate!!, readOnly, onRequestFolderSelector, onFieldModify)
             ProjectType.HybridAngular -> { }

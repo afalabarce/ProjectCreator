@@ -40,7 +40,8 @@ fun ProjectTemplateIcon(template: TemplateProject, modifier: Modifier){
         modifier = modifier,
         imageVector = when (template.projectType){
             ProjectType.None -> Icons.Filled.Cancel
-            ProjectType.Android -> Icons.Filled.Android
+            ProjectType.Android -> loadXmlImageVector(InputSource(ResourceLoader.Default.load("mipmap/android_logo.xml")) , Density(240f, 1f))
+            ProjectType.AndroidKts -> loadXmlImageVector(InputSource(ResourceLoader.Default.load("mipmap/android_logo_kts.xml")) , Density(240f, 1f))
             ProjectType.IOS -> loadXmlImageVector(InputSource(ResourceLoader.Default.load("mipmap/apple_logo.xml")) , Density(240f, 1f))
             ProjectType.Flutter -> loadXmlImageVector(InputSource(ResourceLoader.Default.load("mipmap/flutter_logo.xml")) , Density(240f, 1f))
             else -> loadXmlImageVector(InputSource(ResourceLoader.Default.load("mipmap/ic_hybrid.xml")) , Density(240f, 1f))
@@ -48,7 +49,6 @@ fun ProjectTemplateIcon(template: TemplateProject, modifier: Modifier){
         contentDescription = null,
         tint = when (template.projectType){
             ProjectType.None -> Color.Red
-            ProjectType.Android -> Color.Green
             ProjectType.IOS -> Color.DarkGray
             else -> Color.Unspecified
         },

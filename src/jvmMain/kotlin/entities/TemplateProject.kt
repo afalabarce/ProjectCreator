@@ -19,6 +19,7 @@ data class TemplateProject(
         get() = when(this.projectType){
             ProjectType.None -> null
             ProjectType.Android -> AndroidTemplateActions()
+            ProjectType.AndroidKts -> AndroidKtsTemplateActions()
             ProjectType.IOS -> IosTemplateActions()
             ProjectType.HybridAngular -> AngularTemplateActions()
             ProjectType.HybridVue -> VueTemplateActions()

@@ -3,6 +3,7 @@ package io.github.afalabarce.projectcreator.enums
 enum class ProjectType {
     None,
     Android,
+    AndroidKts,
     IOS,
     HybridAngular,
     HybridVue,

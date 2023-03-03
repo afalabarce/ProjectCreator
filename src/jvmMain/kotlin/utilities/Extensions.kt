@@ -15,6 +15,8 @@ fun File.projectType(): ProjectType = try{
         ProjectType.Flutter
     else  if (this.listFiles()!!.any { x -> x.name.lowercase() == "build.gradle" })
         ProjectType.Android
+    else  if (this.listFiles()!!.any { x -> x.name.lowercase() == "build.gradle.kts" })
+        ProjectType.AndroidKts
     else
         ProjectType.None
 }catch (_: Exception){

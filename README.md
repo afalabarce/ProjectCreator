@@ -80,6 +80,11 @@ las carpetas con proyectos Android y/o iOS que deseemos utilizar como plantilla 
 
 ![img_1.png](img_1.png)
 
+## Particularidades del proyecto
+
+Este proyecto funciona correctamente con **mis plantillas** para versiones [Koin](https://github.com/afalabarce/MVVMProject) y [Dagger-Hilt]((https://github.com/afalabarce/MVVMProject-Hilt)), tanto con las versiones antiguas 
+con ficheros *.gradle basadas en Groovy como con el nuevo desarrollo, basado en ficheros *.gradle.kts.
+
 ## Conclusión
 
 Espero que este proyecto pueda ser de utilidad, a la hora de generar proyectos de forma más eficiente, 
