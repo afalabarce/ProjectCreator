@@ -26,10 +26,10 @@ class AndroidTemplateActions: TemplateProjectAction() {
         if (settingsGradle != null) {
             val settingsLines = settingsGradle.readLines(Charsets.UTF_8)
             return settingsLines.filter { x -> x.startsWith("include '", true) }
-                .map { l ->
+                .flatMap { l ->
                     l.replace("include", "")
                         .replace("'", "")
-                        .replace(":", "").trim()
+                        .replace(":", "").trim().split(",")
                 }
         }
 
@@ -136,8 +136,9 @@ class AndroidTemplateActions: TemplateProjectAction() {
                 .trim()
 
 
-            val packageName = (buildContent.firstOrNull { x -> x.contains("base_package") } ?: "")
+            val packageName = (buildContent.firstOrNull { x -> x.contains("base_package") || x.contains("androidApplicationId") } ?: "")
                 .replace("base_package", "")
+                .replace("androidApplicationId", "")
                 .replace("=", "")
                 .replace("'", "")
                 .trim()
