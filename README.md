@@ -94,4 +94,4 @@ las plantillas base (las desarrolladas por mí se adaptan a la perfección, [MVV
 Es, además, un buen ejercicio para la introducción al desarrollo de aplicaciones de escritorio multiplataforma,
 utilizando JetpackCompose y KMM.
 
-Si crees que he hecho un buen trabajo y me merezco un café, puedes hacerme un [Paypal Me!](https://www.paypal.com/paypalme/afalabarce)
+Si crees que he hecho un buen trabajo y me merezco un café, puedes hacerme un [Paypal Me!](https://www.paypal.com/paypalme/afalabarce) o [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R4NB8VV)
